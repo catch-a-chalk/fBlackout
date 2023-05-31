@@ -2,13 +2,13 @@ extends layout/app
 
 block page
   include chunk/header
+  h1.visually-hidden Blackout Lab - Лаборатория вашего бизнеса
+  //- img(src="img/logotype.png", atl="Логотип", width="500")
 
-  h1.title Главная страница
+  //- ul.news
+  //-   each item in news
+  //-     li=item.name
 
-  img(src="img/logotype.png", atl="Логотип", width="500")
-
-  ul.news
-    each item in news
-      li=item.name
-
+  include chunk/intro
+  include chunk/description
   include chunk/footer
