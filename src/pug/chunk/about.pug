@@ -1,0 +1,11 @@
+- const ACHIEVEMENTS = [{ header: '10+ лет работы', subheader: 'Многолетняя экспертиза, ценные знания и опыт, которыми мы готовы делиться' }, { header: '__ + отделов', subheader: 'Помогающим бизнесам становиться системнее, эффективнее, лучше. Продажи и маркетинг, аналитика и разработка, SERM, SEO и многие другие профессионалы в нашей команде' }, { header: '48+ крупных компаний', subheader: 'Выросших с нами и подтвердивших эффективность нашей системы, инструментов, услуг' }]
+
+section.about
+  .about-wrapper
+    h2.title О нас
+    ul.about__list
+      each achievement in ACHIEVEMENTS
+        li.about__item
+          h3=achievement.header
+          p=achievement.subheader
+          button(type: 'button') Подробнее

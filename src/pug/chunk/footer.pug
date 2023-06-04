@@ -1,1 +1,11 @@
-footer Подвал подвальный
+- const DOCS = [{ link: 'Согласие на обработку данных' }, { link: 'Служба поддержки' }, { link: 'Политика конфиденциальности' }]
+
+footer.footer
+  .footer-wrapper
+    h2.visually-hidden Подвал сайта
+    ul.footer__list
+      each doc in DOCS
+        li.footer__item
+          a(href='#')
+            span=doc.link
+    p © nazvaniesaita.ru, 2054 | Название компании или ИП ОГРН 0000000000000
