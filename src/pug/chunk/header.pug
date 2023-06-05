@@ -1,12 +1,16 @@
-header
+header.header
   .header__wrapper
     h1.visually-hidden Blackout Lab - лаборатория Вашего бизнеса
     ul.header__user
       li.header__usericon
+        svg(xmlns='http://www.w3.org/2000/svg' width='45' height='45' fill='none')
+          rect(width='45' height='45' fill='#D0D0D0' rx='23')
+          path(fill='#fff' d='M29.727 15.3V30h-3.402v-6.027h-6.678V30h-3.402V15.3h3.401v5.796h6.678V15.3h3.402Z')
       li.header__username
+        p Blackout lab
     ul.header__contacts
       li.header__mail
         a(href='mailto:email@email.com&body=привет?subject=вопрос') email@email.com
       li.header__phone
-        a(href='tel:+78000000000') 8#{'('}800#{')'}000-00-00
+        a(href='tel:+78000000000') 8 #{'('}800#{')'} 000-00-00
         small Ежедневно с 9:00 до 20:00

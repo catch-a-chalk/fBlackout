@@ -1,5 +1,5 @@
-$base-font-size: 22px;
 @import "global/*.scss";
+@import "block/*.scss";
 @import "block/*.scss";
 
 * {
@@ -8,13 +8,10 @@ $base-font-size: 22px;
 
 body {
   font-size: $base-font-size;
-  font-family: Arial;
+  font-family: "Montserrat", Arial, sans-serif;
   line-height: 1.5;
+  font-weight: 400;
+  line-height: 30px;
   background-color: $color-black;
-  background-image: url("../img/background.jpg") no-repeat;
-
-  @include ph {
-    color: #fff;
-    background-color: #000;
-  }
+  color: $color-white-smoke;
 }
